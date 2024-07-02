@@ -41,12 +41,14 @@ namespace favorites_cats
 
         private void GetGatosPreferidos()
         {
+            //DataTable listaDados = Data.DAOConexao.GetFavoritos();
             DataTable listaDados = Data.DAOConexao.GetFavoritos();
             foreach (DataRow row in listaDados.Rows)
             {
                 string nome = row["Nome"].ToString();
                 Image img = DownloadImage(row["UrlImage"].ToString());
                 object[] objGato = new object[] { nome, img };
+
                 gridGatosPref.Rows.Add(objGato);
             }
 
@@ -54,14 +56,25 @@ namespace favorites_cats
 
         private Image DownloadImage(string url)
         {
-            using (WebClient webClient = new WebClient())
+            Image img = null;
+            try
             {
-                byte[] data = webClient.DownloadData(url);
-                using (MemoryStream mem = new MemoryStream(data))
+                using (WebClient webClient = new WebClient())
                 {
-                    return Image.FromStream(mem);
+                    byte[] data = webClient.DownloadData(url);
+                    using (MemoryStream mem = new MemoryStream(data))
+                    {
+                        img = Image.FromStream(mem);
+                    }
                 }
+                return img;
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao baixar a imagem: " + ex.Message);
+                return null;
+            }
+
         }
 
         private void GetGatos()

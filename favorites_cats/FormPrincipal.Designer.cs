@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,10 +43,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(351, 424);
+            this.label1.Font = new System.Drawing.Font("Rockwell", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(321, 484);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 25);
+            this.label1.Size = new System.Drawing.Size(264, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mon preferés Chat";
             // 
@@ -72,28 +73,28 @@
             // choisirMonChatToolStripMenuItem
             // 
             this.choisirMonChatToolStripMenuItem.Name = "choisirMonChatToolStripMenuItem";
-            this.choisirMonChatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.choisirMonChatToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.choisirMonChatToolStripMenuItem.Text = "Choisir mon Chat";
             this.choisirMonChatToolStripMenuItem.Click += new System.EventHandler(this.choisirMonChatToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(164, 6);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.sairToolStripMenuItem.Text = "Sortir";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::favorites_cats.Properties.Resources.logo_home_appgatos;
-            this.pictureBox1.Location = new System.Drawing.Point(277, 229);
+            this.pictureBox1.Location = new System.Drawing.Point(156, 121);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(361, 174);
+            this.pictureBox1.Size = new System.Drawing.Size(602, 328);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -107,6 +108,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

@@ -93,9 +93,9 @@
             this.label3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(46, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 19);
+            this.label3.Size = new System.Drawing.Size(129, 19);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Temperamento:";
+            this.label3.Text = "Caractéristiques:";
             // 
             // label4
             // 
@@ -103,9 +103,9 @@
             this.label4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(46, 163);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 19);
+            this.label4.Size = new System.Drawing.Size(64, 19);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Origem:";
+            this.label4.Text = "Origine:";
             // 
             // label5
             // 
@@ -113,16 +113,16 @@
             this.label5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(42, 196);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 19);
+            this.label5.Size = new System.Drawing.Size(117, 19);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Observações:";
+            this.label5.Text = "Commentaires:";
             // 
             // lblTemperamento
             // 
             this.lblTemperamento.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTemperamento.Location = new System.Drawing.Point(174, 126);
+            this.lblTemperamento.Location = new System.Drawing.Point(179, 126);
             this.lblTemperamento.Name = "lblTemperamento";
-            this.lblTemperamento.Size = new System.Drawing.Size(401, 19);
+            this.lblTemperamento.Size = new System.Drawing.Size(378, 19);
             this.lblTemperamento.TabIndex = 0;
             // 
             // lblOrigem
@@ -136,9 +136,9 @@
             // lblObs
             // 
             this.lblObs.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblObs.Location = new System.Drawing.Point(152, 200);
+            this.lblObs.Location = new System.Drawing.Point(165, 199);
             this.lblObs.Name = "lblObs";
-            this.lblObs.Size = new System.Drawing.Size(401, 19);
+            this.lblObs.Size = new System.Drawing.Size(401, 78);
             this.lblObs.TabIndex = 0;
             // 
             // btnChercher
